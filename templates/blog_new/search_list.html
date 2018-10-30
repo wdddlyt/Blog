@@ -1,0 +1,50 @@
+{% extends 'blog_new/base.html' %}
+{% block content %}
+
+<div class="container">
+	<div class="row blog-grid text-center">
+
+
+	</div>
+    <div class="row">
+        <div class="col-md-3">
+
+<ul class="nav blog-li cate-list">
+</ul>
+
+        </div>
+
+        <div class="col-md-9 blog-content">
+
+<div class="posts">
+        {% for article in articles %}
+        <section class="post-list">
+            <header class="post-header tile">
+				<a href="/blog/{{ article.category_name }}/{{ article.id }}/">
+					<div class="row text-left">
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-8">
+							{{ article.title }}
+						</div>
+						<div class="col-md-3">
+							<small>{{ article.create_time }}</small>
+						</div>
+					</div>
+				</a>
+            </header>
+
+                <div class="post-description">
+                    <p>
+                    </p>
+                </div>
+        </section>
+    {% endfor %}
+
+
+</div><!-- /.blog-post -->
+
+        </div>
+</div>
+
+{% endblock content %}

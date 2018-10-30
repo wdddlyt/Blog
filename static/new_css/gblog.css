@@ -1,0 +1,392 @@
+﻿.fl {
+    float: left;
+}
+
+.fr {
+    float: left;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?cwyf8d');
+    src: url('../fonts/icomoon.eot?cwyf8d#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?cwyf8d') format('truetype'),
+    url('../fonts/icomoon.woff?cwyf8d') format('woff'),
+    url('../fonts/icomoon.svg?cwyf8d#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bullhorn:before {
+    content: "\e91a";
+}
+
+.icon-search:before {
+    content: "\e986";
+    font-size: 32px;
+    color: #34495E;
+}
+
+.icon-magic-wand:before {
+    content: "\e997";
+}
+
+.icon-rocket:before {
+    content: "\e9a5";
+}
+
+.icon-google:before {
+    content: "\ea88";
+}
+
+.icon-dribbble:before {
+    content: "\eaa7";
+}
+
+.icon-onedrive:before {
+    content: "\eaaf";
+}
+
+.icon-github:before {
+    content: "\eab0";
+}
+
+.icon-windows8:before {
+    content: "\eac2";
+}
+
+.icon-html-five:before {
+    content: "\eae4";
+}
+
+.icon-html-five2:before {
+    content: "\eae5";
+}
+
+.jumbotron {
+    margin-top: 53px;
+}
+
+.icon-logo {
+    fill: #2C3E50;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: logo-ani 4s infinite;
+    -webkit-transition: -webkit-transform 0.5s;
+}
+
+/*logo变色动画*/
+@-webkit-keyframes logo-ani {
+    0% {
+        fill: #2C3E50;
+    }
+    50% {
+        fill: #BDC3C7;
+    }
+    100% {
+        fill: #2C3E50;
+    }
+}
+
+.icon-logo:hover {
+    -webkit-animation-play-state: paused;
+    -webkit-transform: scale(1.1, 1.1);
+}
+
+/*Search Toggle*/
+.slogan {
+    display: inline-block;
+}
+
+.search-box {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #cdcdcd;
+    overflow: hidden;
+    padding-top: 4px;
+    margin-left: 20px;
+    border-radius: 6px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+/*下层搜索区*/
+.search-content {
+    height: 40px;
+    padding-right: 0px;
+    border-radius: 50px;
+    background-color: rgba(144, 143, 140, 0.4);
+}
+
+.search-content input, .search-btn {
+    width: 80%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2C3E50;
+    padding: 8px 0 6px 10px;
+}
+
+.search-btn {
+    border-radius: 20px;
+    width: 20%;
+    height: 100%;
+    padding: 4px 0 0 4px;
+}
+
+.search-btn > i {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.search-btn:hover {
+    background-color: rgba(144, 143, 140, 0.5);
+}
+
+@media screen and (max-width: 425px) {
+    .icon-link-div {
+        text-align: center;
+    }
+
+    body {
+        font-size: 12px;
+    }
+}
+
+.navbar-nav > .active > a {
+    background-color: red;
+}
+
+.tile {
+    font-size: 18px;
+}
+
+.icon-link {
+    margin: 23px 10px 0px 10px;
+    fill: #BDC3C7;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-link:hover {
+    fill: #2C3E50;
+}
+
+.icon-blog-li {
+    vertical-align: middle;
+    fill: #BDC3C7;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.blog-li {
+    font-size: 18px;
+    padding: 0px;
+}
+
+.blog-li li {
+    list-style-type: none;
+}
+
+.blog-div-grid {
+    font-size: 24px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.blog-grid a {
+    color: white;
+}
+
+.icon-blog-div {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+body, p {
+    font-size: 16px;
+}
+
+h1,
+.h1 {
+    font-size: 28px;
+}
+
+h2,
+.h2 {
+    font-size: 22px;
+}
+
+h3,
+.h3 {
+    font-size: 20px;
+}
+
+h4,
+.h4 {
+    font-size: 18px;
+}
+
+h5,
+.h5 {
+    font-size: 16px;
+}
+
+h6,
+.h6 {
+    font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+    margin-top: 50px;
+}
+pre {
+    margin-left: 10px 0;
+    background-color: #f9f2f4;
+}
+
+.blog-content>ul, .blog-content>ol {
+    /*margin-left: 20px;*/
+    padding-left: 10px;
+}
+.blog-content .posts img{
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 0.1em solid #2980B9;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+}
+@media screen and (min-width: 500px) {
+    .search-content {
+        margin: 20px 50px 10px 50px;
+    }
+}
+
+/*留言区*/
+form h3{
+    margin:0;
+}
+.message-content {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.message-content > li {
+    padding: 10px;
+}
+
+.message-content > li > span {
+    color: #0593d3;
+    margin-right: 20px;
+}
+
+.comment-item > time {
+    font-size: 14px;
+    color: #999;
+}
+
+.comment-item .text {
+    padding: 10px 0 10px 36px;
+    border-bottom: 1px solid #ddd;
+}
+#post-message{
+    margin-bottom: 20px;
+}
+.post-message-main{
+    display: none;
+}
+form textarea{
+    resize: none;
+}
+.comment-btn{
+    margin-top: 10px;
+}
+#cancel-post{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.headico{
+    width: 3.125rem;
+    height: 3.125rem;
+    float: left;
+    border-radius: 50%;
+    margin-top:.7525rem;
+    margin-right: .7525rem;
+    border: 1px solid #f5f5f5;
+    padding: .125rem
+}
+#footer {
+   text-align:center;
+   margin-top: 20px;
+}
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+table th {
+  font-weight: bold;
+}
+table th,
+table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.back-to-top {
+  display: none;
+  position: fixed;
+  right: 4%;
+  bottom: 4%;
+  opacity: .5;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  z-index: 10;
+}
+
+.back-to-top:hover {
+  transform: translateY(-8px);
+}
+.back-to-top:hover .back-icon{
+  background: url(../images/back-top02.png) no-repeat;
+}
+.back-icon {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  background: url(../images/back-top01.png) no-repeat;
+}
+

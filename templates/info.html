@@ -1,0 +1,70 @@
+﻿{% extends 'blog_new/base.html' %}
+
+{% block content %}
+<div class="container">
+	<div class="row blog-grid text-center">
+		
+		
+	</div>
+    <div class="row">
+        <div class="col-md-3">
+			
+<ul class="nav cate-list blog-li">
+</ul>
+
+        </div>
+
+        <div class="col-md-9 blog-content">
+            
+<ol class="breadcrumb">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/{{ article.category_name }}/">{{ article.category_name }}</a></li>
+    <li class="active">{{ article.title }}</li>
+</ol>
+
+<div class="posts">
+        <section class="post">
+            <header class="post-header">
+                <h2 class="post-title">{{ article.title }}</h2>
+
+                    <p class="post-meta">
+                        Time:  <a class="post-time" href="#">{{ article.create_time }}</a>
+                    </p>
+            </header>
+
+        </section>
+    {{ article.get_content_as_markdown }}
+</div><!-- /.blog-post -->
+<form action="/blog/{{ article.category_name }}/{{ article.id }}/" method="post" class="comment-form">
+  {% csrf_token %}
+  <div class="row">
+    <div class="col-md-4">
+      <label for="{{ form.name.id_for_label }}">名字：</label>
+      {{ form.name }}
+      {{ form.name.errors }}
+    </div>
+    <div class="col-md-12">
+      <label for="{{ form.reply.id_for_label }}">评论：</label>
+      {{ form.reply }}
+      {{ form.reply.errors }}
+      <button type="submit" class="comment-btn">发表</button>
+    </div>
+  </div>
+    <ul class="comment-list list-unstyled">
+  {% for visitor in visitors %}
+  <li class="comment-item">
+    <span class="nickname">{{ visitor.name }}</span>
+    <time class="submit-date">{{ visitor.create_time }}</time>
+    <div class="text">
+      {{ visitor.reply }}
+    </div>
+  </li>
+  {% empty %}
+  暂无评论
+  {% endfor %}
+</ul><!-- row -->
+</form>
+        </div>
+</div>
+</div>
+{% endblock content %}
