@@ -11,11 +11,10 @@ from .form import CommentForm
 
 class IndexView(View):
     def get(self,request):
-        articles = Article.objects.all().order_by('-id')
-
+        article = list(Article.objects.filter(category_at__name__exact='AboutMe'))[0]
 
         return render(request, 'blog_new/index.html', context={
-            'articles':articles
+            'article':article
         })
 
 
