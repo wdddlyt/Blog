@@ -26,7 +26,7 @@ SECRET_KEY = '5na(jw8(_bl#%@l&^xd8ec2xo(g#y6o_xc82b*sl#=g19jt@&u'
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.wdddlyt.top']
 
 
 # Application definition
@@ -136,6 +136,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'statics')
 
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, 'static_files'),
